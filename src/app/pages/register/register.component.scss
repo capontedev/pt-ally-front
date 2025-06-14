@@ -1,0 +1,40 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--light-blue);
+}
+
+.password-row {
+  display: flex;
+  gap: 15px;
+}
+
+.password-row .form-group {
+  flex: 1;
+}
+
+.register-link {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.register-link a {
+  color: var(--primary-blue);
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 0.67rem;
+  margin-top: 0.25rem;
+  display: block;
+  font-weight: 500;
+  animation: fadeIn 0.3s ease-in-out;
+}

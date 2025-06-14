@@ -1,0 +1,15 @@
+<div class="sidebar">
+  <div class="sidebar-logo">AppDashboard</div>
+  <nav class="sidebar-nav">
+    @for (navItem of navItems; track navItem.id) {
+      <a
+        [class.active]="activeItem === navItem.id"
+        (click)="handleNavClick(navItem)"
+        class="nav-item"
+      >
+        <span class="nav-icon">{{ navItem.icon }}</span>
+        {{ navItem.label }}
+      </a>
+    }
+  </nav>
+</div>

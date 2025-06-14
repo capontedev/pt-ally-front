@@ -1,0 +1,19 @@
+<div class="weather-card">
+  <div class="weather-card-header">
+    <h3 class="weather-card-title">Países Disponibles</h3>
+  </div>
+  <div class="weather-card-content">
+    <ul class="countries-list">
+      @for (country of countries; track country.code) {
+        <li
+          class="country-item"
+          (click)="onSelectCountry(country)"
+          [style.font-weight]="country.code === selectedCountry?.code ? 'bold' : 'normal'"
+        >
+          <img [src]="country.flag" [alt]="country.name" class="country-flag" />
+          <span class="country-name">{{ country.name }}</span>
+        </li>
+      }
+    </ul>
+  </div>
+</div>

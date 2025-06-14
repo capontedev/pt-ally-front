@@ -1,0 +1,19 @@
+@import './../../host';
+@import './../../weather';
+
+.timezone-list {
+  list-style: none;
+  padding: 0;
+}
+
+.timezone-item {
+  padding: 5px 0;
+  font-size: 0.9rem;
+  color: var(--primary-blue);
+  cursor: pointer;
+  display: inline-block;
+}
+
+.timezone-item:hover {
+  text-decoration: underline;
+}

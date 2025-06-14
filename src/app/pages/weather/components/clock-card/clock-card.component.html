@@ -1,0 +1,11 @@
+<div class="weather-card">
+  <div class="weather-card-header">
+    <h3 class="weather-card-title">Hora</h3>
+  </div>
+  <div class="weather-card-content">
+    <div class="clock-card">
+      <div class="clock-time">{{ timezone?.localtime | date: 'dd/MM/yyyy hh:mm:ss a' }}</div>
+      <div class="clock-timezone">{{ timezone?.name }}</div>
+    </div>
+  </div>
+</div>

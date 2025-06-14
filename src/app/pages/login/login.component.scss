@@ -1,0 +1,28 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--light-blue);
+}
+
+.register-link {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.register-link a {
+  color: var(--primary-blue);
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .card {
+    max-width: 100%;
+  }
+}

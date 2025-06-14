@@ -1,0 +1,48 @@
+@import './../../host';
+
+.users-table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin-bottom: 15px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.users-table th,
+.users-table td {
+  padding: 10px 15px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.users-table th {
+  background-color: var(--background-color);
+  font-weight: 500;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.users-table tr:hover {
+  background-color: var(--hover-color);
+}
+
+.users-table tr:last-child td {
+  border-bottom: none;
+}
+
+.no-records {
+  text-align: center;
+  padding: 20px;
+  color: var(--text-secondary);
+}
+
+.users-loading {
+  text-align: center;
+  padding: 20px;
+  color: var(--text-secondary);
+}

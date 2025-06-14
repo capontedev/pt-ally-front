@@ -1,0 +1,27 @@
+@import './../../host';
+@import './../../weather';
+
+.countries-list {
+  list-style: none;
+  padding: 0;
+}
+
+.country-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  cursor: pointer;
+}
+
+.country-flag {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.country-name {
+  font-size: 0.9rem;
+  color: var(--text-dark);
+}

@@ -1,0 +1,50 @@
+@import './../../host';
+
+.sidebar {
+  width: var(--sidebar-width);
+  background-color: var(--white);
+  border-right: 1px solid var(--border-color);
+  position: fixed;
+  height: 100vh;
+  overflow-y: auto;
+  z-index: 10;
+  padding-top: 20px;
+}
+
+.sidebar-logo {
+  padding: 0 20px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--text-dark);
+}
+
+.sidebar-nav {
+  padding: 10px 0;
+}
+
+.nav-item {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  color: var(--text-gray);
+  text-decoration: none;
+  transition: background-color 0.2s;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  background-color: #f5f5f5;
+}
+
+.nav-item.active {
+  background-color: var(--light-blue);
+  color: var(--primary-blue);
+  border-left: 3px solid var(--primary-blue);
+}
+
+.nav-icon {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}

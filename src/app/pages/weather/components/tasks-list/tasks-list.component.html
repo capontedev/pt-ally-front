@@ -1,0 +1,15 @@
+<div class="weather-card">
+  <div class="weather-card-header">
+    <h3 class="weather-card-title">Otras tareas</h3>
+  </div>
+  <div class="weather-card-content">
+    <ul class="tasks-list">
+      @for (task of taskList; track task.id) {
+        <li>
+          <span class="task-dot"></span>
+          <span class="task-title">{{ task.description }}</span>
+        </li>
+      }
+    </ul>
+  </div>
+</div>

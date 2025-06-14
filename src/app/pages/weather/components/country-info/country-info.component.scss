@@ -1,0 +1,16 @@
+@import './../../host';
+@import './../../weather';
+
+.country-info {
+  font-size: 0.9rem;
+  color: var(--text-dark);
+}
+
+.country-info-item {
+  margin-bottom: 5px;
+}
+
+.country-info-label {
+  font-weight: 500;
+  margin-right: 5px;
+}

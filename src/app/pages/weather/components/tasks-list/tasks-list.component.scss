@@ -1,0 +1,28 @@
+@import './../../host';
+@import './../../weather';
+
+.tasks-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.task-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--task-dot);
+  margin-right: 10px;
+  flex-shrink: 0;
+  display: inline-block;
+}
+
+.task-title {
+  font-size: 0.9rem;
+  color: var(--text-dark);
+}

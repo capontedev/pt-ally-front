@@ -1,0 +1,14 @@
+<div class="weather-card">
+  <div class="weather-card-header">
+    <h3 class="weather-card-title">Zonas horarias disponibles</h3>
+  </div>
+  <div class="weather-card-content">
+    <ul class="timezone-list">
+      @for (timezone of timezoneList; track timezone.tzId) {
+        <li key="{timezone}" class="timezone-item" (click)="handleTimezone(timezone)">
+          {{ timezone.name }}
+        </li>
+      }
+    </ul>
+  </div>
+</div>

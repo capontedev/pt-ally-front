@@ -1,0 +1,61 @@
+@import './../../host';
+
+.users-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.toolbar-actions {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.toolbar-button {
+  display: flex;
+  align-items: center;
+  padding: 6px 12px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: background-color 0.2s;
+}
+
+.toolbar-button:hover {
+  background-color: #4845c2;
+}
+
+.button-icon {
+  margin-right: 5px;
+  font-size: 0.875rem;
+}
+
+.toolbar-filter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.toolbar-filter label {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.toolbar-filter input {
+  padding: 6px 10px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  font-size: 0.875rem;
+}
+
+.toolbar-filter input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}

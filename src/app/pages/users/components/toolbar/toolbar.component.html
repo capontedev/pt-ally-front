@@ -1,0 +1,31 @@
+<div class="users-toolbar">
+  <div class="toolbar-actions">
+    <button class="toolbar-button" (click)="alertTodo()">
+      <span class="button-icon">📄</span> PDF
+    </button>
+    <button class="toolbar-button" (click)="alertTodo()">
+      <span class="button-icon">📋</span> Copy
+    </button>
+    <button class="toolbar-button" (click)="alertTodo()">
+      <span class="button-icon">📊</span> Excel
+    </button>
+    <button class="toolbar-button" (click)="alertTodo()">
+      <span class="button-icon">🖨️</span> Imprimir
+    </button>
+    <button class="toolbar-button" (click)="alertTodo()">
+      <span class="button-icon">📊</span> Columnas
+    </button>
+    <button class="toolbar-button" (click)="alertTodo()">
+      <span class="button-icon">👁️</span> Mostrar
+    </button>
+  </div>
+  <div class="toolbar-filter">
+    <label htmlFor="filter">Filtrar:</label>
+    <input
+      type="text"
+      placeholder="Buscar usuarios..."
+      (input)="onSearch($event)"
+      class="search-input"
+    />
+  </div>
+</div>

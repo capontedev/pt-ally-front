@@ -1,0 +1,15 @@
+# Archivos de compilación
+/dist
+/node_modules
+
+# Archivos de configuración
+/package-lock.json
+/package.json
+
+# Archivos de entorno
+/environments
+
+# Otros
+.git
+.gitignore
+README.md

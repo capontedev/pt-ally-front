@@ -1,0 +1,27 @@
+<div class="weather-card">
+  <div class="weather-card-header">
+    <h3 class="weather-card-title">País Seleccionado</h3>
+  </div>
+  <div class="weather-card-content">
+    <div class="country-info">
+      <div class="country-info-item">
+        <span class="country-info-label">País:</span>
+        {{ countryInfo?.name }}
+      </div>
+      <div class="country-info-item">
+        <span class="country-info-label">Capital:</span>
+        {{ countryInfo?.capital }}
+      </div>
+      <div class="country-info-item">
+        <span class="country-info-label">Región:</span>
+        {{ countryInfo?.region }}
+      </div>
+      <div class="country-info-item">
+        <span class="country-info-label">Latitud:</span>
+        {{ countryInfo?.latitude }}
+        <span class="country-info-label" style="margin-left: 10px"> Longitud: </span>
+        {{ countryInfo?.longitude }}
+      </div>
+    </div>
+  </div>
+</div>

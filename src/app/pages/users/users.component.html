@@ -1,0 +1,18 @@
+<div class="users-container">
+  <div class="users-header">
+    <h1>Usuarios</h1>
+  </div>
+  <div class="users-content">
+    <app-toolbar (search)="onSearch($event)" />
+    <app-table [users]="users" />
+    <app-pagination
+      [currentPage]="currentPage"
+      [totalPages]="totalPages"
+      [totalRecords]="totalRecords"
+      [recordsPerPage]="recordsPerPage"
+      [startRecord]="startRecord"
+      [endRecord]="endRecord"
+      (pageChange)="onPageChange($event)"
+    />
+  </div>
+</div>

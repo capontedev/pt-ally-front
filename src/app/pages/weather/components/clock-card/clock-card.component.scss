@@ -1,0 +1,18 @@
+@import './../../host';
+@import './../../weather';
+
+.clock-card {
+  padding: 10px 0;
+}
+
+.clock-time {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  margin-bottom: 5px;
+}
+
+.clock-timezone {
+  font-size: 0.9rem;
+  color: var(--text-gray);
+}

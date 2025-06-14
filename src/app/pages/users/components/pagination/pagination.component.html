@@ -1,0 +1,36 @@
+<div class="users-pagination">
+  <div class="pagination-info">
+    Mostrando registros del {{ startRecord }} al {{ endRecord }} de un total de {{ totalRecords }}
+  </div>
+  <div class="pagination-controls">
+    <button class="pagination-button" [disabled]="isFirstPage" (click)="onPageChange(1)">
+      Primero
+    </button>
+    <button
+      class="pagination-button"
+      [disabled]="isFirstPage"
+      (click)="onPageChange(currentPage - 1)"
+    >
+      Anterior
+    </button>
+    @for (page of [].constructor(totalPages); track $index) {
+      <button
+        class="pagination-button"
+        [class.active]="currentPage === $index + 1"
+        (click)="onPageChange($index + 1)"
+      >
+        {{ $index + 1 }}
+      </button>
+    }
+    <button
+      class="pagination-button"
+      [disabled]="isLastPage"
+      (click)="onPageChange(currentPage + 1)"
+    >
+      Siguiente
+    </button>
+    <button class="pagination-button" [disabled]="isLastPage" (click)="onPageChange(totalPages)">
+      Último
+    </button>
+  </div>
+</div>
