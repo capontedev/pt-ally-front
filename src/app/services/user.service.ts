@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, Subject, debounceTime, distinctUntilChanged, switchMap } from 'rxjs';
 import { environment } from '../../environments/environment';
 import {
   User,
@@ -14,8 +14,20 @@ import {
 })
 export class UserService {
   private apiUrl = `${environment.apiUrl}/users`;
+  private searchSubject = new Subject<string>();
+  public users$: Observable<PaginatedResponse<User>>;
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {
+    this.users$ = this.searchSubject.pipe(
+      debounceTime(500),
+      distinctUntilChanged(),
+      switchMap(search => this.getUsers(1, 10, search))
+    );
+  }
+
+  searchUsers(search: string): void {
+    this.searchSubject.next(search);
+  }
 
   getUsers(
     page: number = 1,
